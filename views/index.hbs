@@ -1,0 +1,30 @@
+{{!-- Mensaje de Bienvenida --}}
+<section class="home2">
+    <section class="home_container container">
+    <h1 class="home_title">¡Hola! Soy una web de Musica</h1>
+    <p class="home_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Voluptates veritatis consectetur aliquam harum sapiente recusandae
+        non eligendi delectus numquam quasi. Nisi quae dignissimos odit,
+        temporibus fugit soluta ipsa similique suscipit.</p>
+    </section>
+</section>
+
+{{!-- Seccion principal del Home - Ingresa Apodo --}}
+<main>
+    <section class="container tips">
+        <h2 class="title">Por favor ingresa tu Nuevo Apodo, pero solo si es nuevo o me rompo 😭 </h2>
+        <div class="promos_table">
+                <form class="contacto_form" action="/Apodo" method="post">
+                <div class="contacto_input_div">
+                    <label for="Apodo" class="contacto_label">Tu nuevo Apodo es: </label>
+                    <input type="text" placeholder="..." id="Apodo" name="Apodo" class="contacto_input">
+                </div>
+                <button type="submit" class="contacto_btn" target="blank" >Enviar</button>                
+            </form>
+            <h3 class="contacto_validacion">{{validacion}}
+            </h3>
+        </section>
+            </div>
+        </div>
+    </div>
+</main>

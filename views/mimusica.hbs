@@ -1,0 +1,52 @@
+{{!--  Ingresa Apodo --}}
+    <section class="container tips">
+        <div class="promos_table">
+                <form class="contacto_form" action="/mimusica" method="post">
+                <div class="contacto_input_div">
+                    <label for="ApodoEX" class="contacto_label2">Ingresa tu Apodo: </label>
+                    <input type="text" placeholder="..." id="ApodoEX" name="ApodoEX" class="contacto_input2">
+                </div>
+                <button type="submit" class="contacto_btn2" target="blank">Enviar</button>                
+            </form>
+            <h3 class="contacto_validacion">{{validacion}}
+            </h3>
+        </section>
+            </div>
+        </div>
+    </div>
+
+
+<section class="list">
+    <section class="list_container container">
+        <h2 class="list_title">
+            <hr>
+                <h2 class="title">Hola, {{ApodoEX}} aca esta tu lista de canciones</h2>
+            <hr>
+        </h2>
+
+            
+    <table class="table table-striped" id="mytable">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Artista</th>
+                <th>Apodo</th>
+{{!--                 <th>Favorito</th> --}}
+            </tr>
+        </thead>
+        <tbody>
+            {{#each results}}
+            <tr>
+                <td> {{ tituloDB }}</td>
+                <td> {{ artistaDB }}</td>
+                <td> {{ ApodoDB }}</td>
+{{!--                 <td> {{ favDB }}</td>--}}            
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+
+</section>
+
+</section>

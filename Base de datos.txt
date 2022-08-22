@@ -1,0 +1,18 @@
+create database sprint1G6;
+use sprint1G6;
+
+create table APODOSTABLA(
+	id int unsigned not null auto_increment,
+    ApodoDB varchar(50) not null,
+    primary key(id)
+);
+INSERT INTO APODOSTABLA VALUES ( 1, "Jorge"); 
+
+create table CANCIONESTABLA(
+	id int unsigned not null auto_increment,
+    tituloDB varchar(50) not null,
+    artistaDB varchar(50) not null,
+    ApodoDB varchar(50) not null,
+    favDB bit not null,
+    primary key(id)
+);

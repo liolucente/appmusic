@@ -1,0 +1,30 @@
+<!-- Formulario -->
+<section class="contacto">
+    <section class="conctacto_container container">
+        <h2 class="title">
+        <hr>
+        A continuacion ingresa un nueva cancion para tu Apodo 🎵
+        <hr>
+        </h2>
+        <form class="contacto_form" action="/agregar" method="post">
+        <div class="contacto_input_div">
+            <label class="contacto_label">Titulo de la cancion: </label>
+            <input type="text" placeholder="..." id="titulo" name="titulo" class="contacto_input">
+            <label class="contacto_label">Artista o Banda: </label>
+            <input type="text" placeholder="..." id="artista" name="artista" class="contacto_input">
+            <label class="contacto_label">Tu Apodo: </label>
+            <input type="text" placeholder="..." id="Apodo" name="Apodo" class="contacto_input">
+            <label class="contacto_labelcheck">
+                <input type="checkbox" id="fav" name="fav" class="contacto_inputcheck">¿Es favorita?
+            </label>
+            <div class="contacto_input_div">
+                <button type="submit" class="contacto_btn" target="blank" >Agregar</button>             
+            </div>
+        </div>   
+        </form>
+        </section>
+        </section>
+
+        <br>
+        <h3 class="contacto_validacion">{{validacion}}</h3>
+
